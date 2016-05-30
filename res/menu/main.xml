@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.rssreadertutby.ListRSSItemsActivity"
+    
+>
+
+    <item
+        android:id="@+id/startService"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_play_arrow_black_24dp"
+        android:title="start"/>
+    
+      <item
+        android:id="@+id/stopService"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/ic_pause_black_24dp"
+        android:title="stop"/>
+    
+</menu>

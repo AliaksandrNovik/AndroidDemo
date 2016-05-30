@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dip" >
+
+    <!-- ListRow Left sied Thumbnail image -->
+
+    <LinearLayout
+        android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dp"
+            android:src="@drawable/rihanna" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/page_url"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <!-- Article title -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+          android:layout_toRightOf="@+id/thumbnail"
+        android:paddingBottom="1dip"
+        android:textColor="#303030"
+        android:textSize="18dip"
+        android:textStyle="bold" />
+
+    <!-- published date -->
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:paddingBottom="0.5dip"
+        android:textColor="#b70400"
+        android:textSize="10dip" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/thumbnail"
+           android:layout_below="@id/link"
+        android:paddingBottom="1dip"
+        android:textColor="#b70400"
+        android:textSize="16dip" />
+
+         <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    
+    <!-- article description -->
+
+</RelativeLayout>

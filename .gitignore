@@ -7,6 +7,10 @@
 
 # Java class files
 *.class
+*.project
+*.settings
+*.classpath
+/libs
 
 # Generated files
 bin/
